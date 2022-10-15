@@ -141,8 +141,8 @@ const dateNow = date(0,0,0,false,'forwardSlash')
 ## Starter Code
 
 ```js
-const date = require('@aftabmk/date');
+const {getDate} = require('@aftabmk/date');
 // date now in the format dd/mm/yyyy
-const dateNow = date(0,0,0,false,'forwardSlash')
+const date = getDate(0,0,0,false,'forwardSlash')
 // result 01/01/2022
 ```

@@ -27,6 +27,6 @@ function getDate(prevDay,prevMonth,prevFullYear,setYear,type)
 function reduce(current,reduce){if(current>reduce) return current-reduce;else return current}
 function prepend(number){if(number<10){return '0'+number}else return number}
 
-console.log(getDate(10,1,0,true,'forwardSlash'))
+// console.log(getDate(10,1,0,true,'forwardSlash'))
 
 module.exports = { getDate }
