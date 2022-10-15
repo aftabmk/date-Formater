@@ -4,32 +4,32 @@
         <a href="https://aftab.netlify.app"><img src="https://pluspng.com/img-png/clock-hd-png-clock-png-image-1399.png" /></a><br>
     </b>
 </h1>
-<p align="center">*This module is used to generate date with specific format like 04/07/1995 from js build in function of **Date.now()**,The aim of this package is to simplify the date-format to readily usable syntax with no further alteration*.</p>
+<p align="center">This module is used to generate date with specific format like 04/07/1995 from js build in function of <h2>Date.now()</h2>,The aim of this package is to simplify the date-format to readily usable syntax with no further alteration.</p>
 
 ## Installing
 
 Using npm:
 
 ```bash
-$ npm install axios
+$ npm install @aftabmk/date
 ```
 
 Using bower:
 
 ```bash
-$ bower install axios
+$ bower install @aftabmk/date
 ```
 
 Using yarn:
 
 ```bash
-$ yarn add axios
+$ yarn add @aftabmk/date
 ```
 
 Using pnpm:
 
 ```bash
-$ pnpm add axios
+$ pnpm add @aftabmk/date
 ```
 
 ## Example
@@ -37,54 +37,111 @@ $ pnpm add axios
 ### note: CommonJS usage
 In order to gain the TypeScript typings (for intellisense / autocomplete) while using CommonJS imports with `require()` use the following approach:
 
+## Inputs
+The date function has four inputs
+1)The day input, default 0
+## Day(week ago)
 ```js
-const axios = require('axios').default;
-
-// axios.<method> will now provide autocomplete and parameter typings
+const dateNow = date(7,0,0,true,'forwardSlash')
+// current 10/05/2022
+// result 03/05/2022
+// logic day = 10-8 = 2
+```
+2)The month input, default 0
+## Month(Quarter ago)
+```js
+const dateNow = date(0,3,0,true,'forwardSlash')
+// current 02/12/22
+// result 02/9/22
+// logic day = 12-3 = 9
+```
+3)The year input , default 0
+## Year(decade ago)
+```js
+const dateNow = date(0,0,10,true,'forwardSlash')
+// current 02/12/22
+// result 02/9/12
+// logic day = 22-5 = 12
+```
+4)The boolean input
+## True
+```js
+const dateNow = date(0,0,0,true,'forwardSlash')
+// result 01/01/22
+```
+## False
+```js
+const dateNow = date(0,0,0,false,'forwardSlash')
+// result 01/01/2022
+```
+5)Symbol input
+## Examples of input symbols
+## Ampersand(&)
+```js
+const dateNow = date(0,0,0,false,'ampersand')
+// result 01&01&2022
+```
+## Apostrophe(')
+```js
+const dateNow = date(0,0,0,false,'apostrophe')
+// result 01'01'2022
+```
+## Asterisk(*)
+```js
+const dateNow = date(0,0,0,false,'asterisk')
+// result 01*01*2022
+```
+## AatSign(@)
+```js
+const dateNow = date(0,0,0,false,'atSign')
+// result 01@01@2022
+```
+## Dot(.)
+```js
+const dateNow = date(0,0,0,false,'dot')
+// result 01.01.2022
+```
+## Dollar($)
+```js
+const dateNow = date(0,0,0,false,'dollar')
+// result 01$01$2022
+``` 
+## Hyphen($)
+```js
+const dateNow = date(0,0,0,false,'hyphen')
+// result 01-01-2022
+``` 
+## UnderScore($)
+```js
+const dateNow = date(0,0,0,false,'underScore')
+// result 01_01_2022
+``` 
+## Exclamation($)
+```js
+const dateNow = date(0,0,0,false,'exclamation')
+// result 01!01!2022
+```
+## Hash($)
+```js
+const dateNow = date(0,0,0,false,'hash')
+// result 01#01#2022
+```
+## Quotation($)
+```js
+const dateNow = date(0,0,0,false,'quotation')
+// result 01"01"2022
+```
+## ForwardSlash($)
+```js
+const dateNow = date(0,0,0,false,'forwardSlash')
+// result 01/01/2022
 ```
 
-Performing a `GET` request
+## Starter Code
 
 ```js
-const axios = require('axios').default;
-
-// Make a request for a user with a given ID
-axios.get('/user?ID=12345')
-  .then(function (response) {
-    // handle success
-    console.log(response);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .finally(function () {
-    // always executed
-  });
-
-// Optionally the request above could also be done as
-axios.get('/user', {
-    params: {
-      ID: 12345
-    }
-  })
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  })
-  .finally(function () {
-    // always executed
-  });
-
-// Want to use async/await? Add the `async` keyword to your outer function/method.
-async function getUser() {
-  try {
-    const response = await axios.get('/user?ID=12345');
-    console.log(response);
-  } catch (error) {
-    console.error(error);
-  }
-}
+const date = require('@aftabmk/date');
+// date now in the format dd/mm/yyyy
+const dateNow = date(0,0,0,false,'forwardSlash')
+// result 01/01/2022
 ```
