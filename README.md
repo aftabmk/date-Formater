@@ -1,7 +1,7 @@
 <h1 align="center">
     Date
    <b>
-        <a href="https://aftab.netlify.app"><img src="https://pluspng.com/img-png/clock-hd-png-clock-png-image-1399.png" /></a><br>
+        <a href="https://aftab.netlify.app"><img src="https://firebasestorage.googleapis.com/v0/b/blog-91241.appspot.com/o/date.png?alt=media&token=103209d2-a771-4372-b682-ee724d4e0054" /></a><br>
     </b>
 </h1>
 <p align="center">This module is used to generate date with specific format like 04/07/1995 from js build in function of Date.now(),The aim of this package is to simplify the date-format to readily usable syntax with no further alteration.</p>
