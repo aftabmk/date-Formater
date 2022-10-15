@@ -4,7 +4,7 @@
         <a href="https://aftab.netlify.app"><img src="https://pluspng.com/img-png/clock-hd-png-clock-png-image-1399.png" /></a><br>
     </b>
 </h1>
-<p align="center">This module is used to generate date with specific format like 04/07/1995 from js build in function of <h2>Date.now()</h2>,The aim of this package is to simplify the date-format to readily usable syntax with no further alteration.</p>
+<p align="center">This module is used to generate date with specific format like 04/07/1995 from js build in function of Date.now(),The aim of this package is to simplify the date-format to readily usable syntax with no further alteration.</p>
 
 ## Installing
 
@@ -39,6 +39,7 @@ In order to gain the TypeScript typings (for intellisense / autocomplete) while 
 
 ## Inputs
 The date function has four inputs
+
 1)The day input, default 0
 ## Day(week ago)
 ```js
@@ -106,32 +107,32 @@ const dateNow = date(0,0,0,false,'dot')
 const dateNow = date(0,0,0,false,'dollar')
 // result 01$01$2022
 ``` 
-## Hyphen($)
+## Hyphen(-)
 ```js
 const dateNow = date(0,0,0,false,'hyphen')
 // result 01-01-2022
 ``` 
-## UnderScore($)
+## UnderScore(_)
 ```js
 const dateNow = date(0,0,0,false,'underScore')
 // result 01_01_2022
 ``` 
-## Exclamation($)
+## Exclamation(!)
 ```js
 const dateNow = date(0,0,0,false,'exclamation')
 // result 01!01!2022
 ```
-## Hash($)
+## Hash(#)
 ```js
 const dateNow = date(0,0,0,false,'hash')
 // result 01#01#2022
 ```
-## Quotation($)
+## Quotation(")
 ```js
 const dateNow = date(0,0,0,false,'quotation')
 // result 01"01"2022
 ```
-## ForwardSlash($)
+## ForwardSlash(/)
 ```js
 const dateNow = date(0,0,0,false,'forwardSlash')
 // result 01/01/2022
