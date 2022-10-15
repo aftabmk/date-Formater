@@ -1,0 +1,1 @@
+This package provide date with specific format using 'ampersand','apostrophe','asterisk','atSign','dot','dollar','hyphen','underScore','exclamation','hash','quotation'and 'forwardSlash'.This package can also provide date format of today,week ago,month ago and year ago dates.
