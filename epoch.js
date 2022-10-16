@@ -4,3 +4,9 @@
   var month         = currentTime.substring(currentTime.indexOf('/') + 1, monthPosition);
   var time          = month + "/" + day + currentTime.substring(month.length + day.length  + 1); 
 //"02/21/2021 12:00"
+  var epochTime = Date.parse(time);
+
+//or get current time of epoch time
+  var currentEpoch = Date.parse(new Date());
+
+var currentEpochErr = Date.parse(new Date().toString());
