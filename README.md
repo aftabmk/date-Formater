@@ -154,13 +154,6 @@ const date = getDate(0,0,0,false,'forwardSlash')
 // date now in the format dd/mm/yyyy
 // result 01/01/2022
 ```
-*getDate function*
-```js
-const { getDate } = require('@aftabmk/date');
-const date = getDate(0,0,0,false,'forwardSlash')
-// date now in the format dd/mm/yyyy
-// result 01/01/2022
-```
 *getDateNow function*
 ```js
 const { getDateNow } = require('@aftabmk/date');
@@ -168,17 +161,17 @@ const date = getDateNow(false,'forwardSlash')
 // date now in the format dd/mm/yyyy
 // result 01/01/2022(Today date)
 ```
-*getDate function*
+*getEpoch function*
 ```js
-const { geEpoch } = require('@aftabmk/date');
+const { getEpoch } = require('@aftabmk/date');
 const date = getEpoch('14/07/2002','12:30')
 // date format dd/mm/yyyy
 // time format hh:mm
 // result 1026630000
 ```
-*getDate function*
+*getEpochNow function*
 ```js
-const { geEpochNow } = require('@aftabmk/date');
+const { getEpochNow } = require('@aftabmk/date');
 const date = getEpochNow()
 // no input
 // result 1613889000000 in sec
