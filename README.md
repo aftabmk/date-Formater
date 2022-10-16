@@ -1,7 +1,7 @@
 <h1 align="center">
     Date
    <b>
-        <a href="https://aftab.netlify.app"><img src="img\img.png" /></a><br>
+        <a href="https://aftab.netlify.app"><img src="https://raw.githubusercontent.com/aftabmk/date-Formater/master/img/img.png" /></a><br>
     </b>
 </h1>
 <p align="center">This module is used to generate date and epoch with specific format like 04/07/1995. The aim of this package is to simplify the date-format to readily usable syntax with no further alteration.</p>
