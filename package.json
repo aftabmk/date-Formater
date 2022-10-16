@@ -27,7 +27,11 @@
     "exclamation",
     "hash",
     "quotation",
-    "forwardSlash"
+    "forwardSlash",
+    "date-now",
+    "now",
+    "epoch",
+    "epoch-now"
   ],
   "author": "Aftab Mohamed Kizhissery",
   "license": "MIT"
